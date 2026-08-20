@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>carts</title>
+</head>
+<body>
+    <div class="cart-page" id="cart-page"> 
+
+        <div class="cart-header">
+            <h1>Shopping Cart</h1>
+            <a href="index.html" id="continue-shopping">Continue Shopping</a>
+        </div>
+
+        <div class="cart-container">
+
+            <div class="cart-items" id="cart-items">
+
+                    <div class="cart-item-info">
+                        <h3>Product Name</h3>
+                        <p>$25.00</p>
+
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+
+                    <button class="remove-btn">Remove</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="cart-summary" id="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="shipping">$5.00</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="total">$0.00</strong>
+                </div>
+
+                <button class="checkout-btn" id="checkout-btn">
+                    Proceed to Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
